@@ -20,6 +20,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",
+    "html5-boilerplate": "~5.2.0",
     "jquery": "~2.1.4",
     "jquery-ui": "~1.11.4"
   }
