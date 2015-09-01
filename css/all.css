@@ -1,4 +1,40 @@
 
+#wrapper {
+	max-width: 1000px;
+	min-width: 800px;
+	/*height: 1200px;*/
+	border: 1px solid black; /*delete after finish*/
+	margin: 0 auto;
+}
+#header {
+	width: 40%;
+	/*height: 100%;*/
+	background-color: #ececec;
+	border-right: 2px solid #333333;
+	float: left;
+	position: relative;
+}
+#main {
+	width: 60%;
+	/*height: 100%;*/
+	background-color: #ffffff;
+	float: right;
+	position: relative;
+}
+
+.photoWrapper{
+	background-color: white;
+	width: 192px;
+	height: 230px;
+	margin: 100px 0 100px 100px;
+
+	padding: 4px;
+}
+.myPhoto {
+	border: 2px solid #000000;
+	overflow: hidden;
+	opacity: 0.8;
+}
 
 .group:after {
 	content: ".";

@@ -3,30 +3,127 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML5</title>
-	<link media="all" rel="stylesheet" href="css/all.css">
-	<script type="text/javascript" src="js/main.js"></script>
+	<link media="screen" rel="stylesheet" href="css/screen.css">
+	<script src="js/modernizr-2.8.3.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$("#tabs").tabs();
+		});
+	</script>
 </head>
 <body>
-	<div id="wrapper">
-		<header id="header">
-			<strong class="logo"><a href="#"></a></strong>
-			<nav id="nav">
-				<ul>
-					<li><a href="#">link</a>
-						<span>text</span>
-					</li>
-					<li><a href="#">link</a>
-						<span>text</span>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<div id="main">
+	<div id="wrapper" class="group">
+		<div id="header" class="group">
+			<div class="photoWrapper">
 
+					<figure class="myPhoto">
+						<img src="images/myPhoto2.gif" alt="My photo" width="100%" height="222"/>
+					</figure>
+
+			</div>
+			<div>
+				<ul>
+					<li>geolocation</li>
+					<li>+380993110481</li>
+					<li>sanechegg@gmail.com</li>
+					<li>www.world.cc.ua</li>
+					<li>vk.com/id8731045</li>
+					<li>github.com/localstance</li>
+					<li>something else</li>
+				</ul>
+			</div>
+
+			<div>
+				<h1>SKILLS</h1>
+				<div>
+					<h2>Professional skills</h2>
+						<ul>
+							<li>Javascript(JQuery)</li>
+							<li>HTML5/CSS3(Bootstrap)</li>
+							<li>DOM</li>
+							<li>AJAX</li>
+							<li>Git, Bower, Grunt</li>
+							<li>Adobe Photoshop</li>
+						</ul>
+				</div>
+				<div>
+					<h2>Personal skills</h2>
+						<ul>
+							<li>Desire and ability to studies</li>
+							<li>Responsibility</li>
+							<li>Adaptability</li>
+							<li>Communication</li>
+							<li>Organization</li>
+						</ul>
+				</div>
+			</div>
+			<nav id="nav">
+
+			</nav>
+
+		</div>
+		<div id="main" class="group">
+			<h1>Aleksandr Strelchenko</h1>
+			<h2>junior front-end developer</h2>
+			<p>My name is Aleksandr Strelchenko and I'm 24 years old. I'm looking for a position of trainee
+				front-end developer. I'm easy-going, ambitious and sociable "trainee" from Kharkiv, Ukraine.
+				I have been really crazy about development with JS since I opened WebStorm for the first time 4 month ago.
+				Ever since then, I've been constantly trying to improve my skills. Code is my driving passion.
+				</p>
+			<p>I would like to make cool websites, well thought scripts and cool user interfaces.
+				I also continue to learn and practice other useful things around front-end and web development. </p>
+
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">Nunc tincidunt</a></li>
+					<li><a href="#tabs-2">Proin dolor</a></li>
+					<li><a href="#tabs-3">Aenean lacinia</a></li>
+					<li><a href="#tabs-4">Aenean lacinia</a></li>
+				</ul>
+				<div id="tabs-1">
+					<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+				</div>
+				<div id="tabs-2">
+					<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+				</div>
+				<div id="tabs-3">
+					<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+					<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+				</div>
+				<div id="tabs-4">
+					<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+					<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+				</div>
+			</div>
+			<h2>EDUCATION</h2>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			<h2>WORK EXPERIENCE</h2>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 		</div>
 		<footer id="footer">
 			
 		</footer>
 	</div>
+
+
+	<!---->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
