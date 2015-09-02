@@ -14,10 +14,42 @@
 			$("#tabs").tabs();
 		});
 	</script>
+	<script>
+		$(function() {
+			//all sliders
+			$(".slider").slider({
+				value: 27,
+				orientation: "horizontal",
+				range: "min",
+				animate: true
+			});
+			//prof skills sliders
+			$(".slider-html-css").slider("option", "value", 45);
+			$(".slider-dom").slider("option", "value", 50);
+			$(".slider-ajax").slider("option", "value", 20);
+			$(".slider-git-bower-grunt").slider("option", "value", 35);
+			$(".slider-photoshop").slider("option", "value", 60);
+			//pers skills sliders
+			$(".slider-desire").slider("option", "value", 100);
+			$(".slider-resp").slider("option", "value", 90);
+			$(".slider-adapt").slider("option", "value", 80);
+			$(".slider-commun").slider("option", "value", 85);
+			$(".slider-org").slider("option", "value", 70);
+			//unactive on hover
+			$(".slider").hover(
+				function (){
+					$(this).slider("option", "disabled", true);
+				}, function (){
+					$(this).slider("option", "disabled", false);
+				}
+			);
+
+		});
+	</script>
 </head>
 <body>
 	<div id="wrapper" class="group">
-		<div id="header" class="group">
+		<div id="sidebar" class="group">
 			<div class="photoWrapper">
 
 					<figure class="myPhoto">
@@ -25,64 +57,146 @@
 					</figure>
 
 			</div>
-			<div>
+			<div class="contacts">
 				<ul>
-					<li>geolocation</li>
-					<li>+380993110481</li>
-					<li>sanechegg@gmail.com</li>
-					<li>www.world.cc.ua</li>
-					<li>vk.com/id8731045</li>
-					<li>github.com/localstance</li>
-					<li>something else</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>Geolocation
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+380993110481
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>sanechegg@gmail.com
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>www.world.cc.ua
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>vk</span>www.vk.com/id8731045
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>git</span>www.github.com/localstance
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>something else
+						</a>
+					</li>
 				</ul>
-			</div>
+			</div> <!--Contacts end-->
 
-			<div>
-				<h1>SKILLS</h1>
-				<div>
-					<h2>Professional skills</h2>
-						<ul>
-							<li>Javascript(JQuery)</li>
-							<li>HTML5/CSS3(Bootstrap)</li>
-							<li>DOM</li>
-							<li>AJAX</li>
-							<li>Git, Bower, Grunt</li>
-							<li>Adobe Photoshop</li>
+			<div class="skills">
+				<h1>SKILLS</h1><span class="borderLine"></span>
+				<div class="professionalSkills">
+					<h2>PROFESSIONAL SKILLS</h2>
+						<ul class="profSkills">
+							<li class="group">
+								<ul class="skillsMarks">
+									<li>Good<span>|</span></li>
+									<li> Average<span>|</span></li>
+									<li>Skilled</li>
+								</ul>
+							</li>
 						</ul>
-				</div>
-				<div>
-					<h2>Personal skills</h2>
-						<ul>
-							<li>Desire and ability to studies</li>
-							<li>Responsibility</li>
-							<li>Adaptability</li>
-							<li>Communication</li>
-							<li>Organization</li>
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-5 control-label">Javascript(JQuery)</label>
+								<div class="col-sm-6 slider slider-javascript"></div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-5 control-label">HTML5/CSS3</label>
+								<div class="col-sm-6 slider slider-html-css"></div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-5 control-label">DOM</label>
+								<div class="col-sm-6 slider slider-dom"></div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-5 control-label">AJAX</label>
+								<div class="col-sm-6 slider slider-ajax"></div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-5 control-label">Git, Bower, Grunt</label>
+								<div class="col-sm-6 slider slider-git-bower-grunt"></div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-5 control-label">Adobe Photoshop</label>
+								<div class="col-sm-6 slider slider-photoshop"></div>
+							</div>
+
+						</form>
+				</div><!--Professional skills end-->
+				<div class="personalSkills">
+					<span class="borderLine2"></span>
+					<h2>PERSONAL SKILLS</h2>
+						<ul class="persSkills">
+							<li class="group">
+								<ul class="skillsMarks">
+									<li>Good<span>|</span></li>
+									<li>Average<span>|</span></li>
+									<li>Skilled</li>
+								</ul>
+							</li>
 						</ul>
-				</div>
-			</div>
-			<nav id="nav">
-
-			</nav>
-
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-5 control-label">Desire and ability to studies</label>
+								<div class="col-sm-6 slider slider-desire"></div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-5 control-label">Responsibility</label>
+								<div class="col-sm-6 slider slider-resp"></div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-5 control-label">Adaptability</label>
+								<div class="col-sm-6 slider slider-adapt"></div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-5 control-label">Communication</label>
+								<div class="col-sm-6 slider slider-commun"></div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-5 control-label">Organization</label>
+								<div class="col-sm-6 slider slider-org"></div>
+							</div>
+						</form>
+				</div><!--Personal skills end-->
+			</div><!--Block skills end-->
 		</div>
+
+		<!--Left-side end-->
+
+		<!--Main content-->
+
 		<div id="main" class="group">
 			<h1>Aleksandr Strelchenko</h1>
-			<h2>junior front-end developer</h2>
+			<h2>Junior front-end developer</h2>
 			<p>My name is Aleksandr Strelchenko and I'm 24 years old. I'm looking for a position of trainee
 				front-end developer. I'm easy-going, ambitious and sociable "trainee" from Kharkiv, Ukraine.
 				I have been really crazy about development with JS since I opened WebStorm for the first time 4 month ago.
 				Ever since then, I've been constantly trying to improve my skills. Code is my driving passion.
 				</p>
-			<p>I would like to make cool websites, well thought scripts and cool user interfaces.
+			<p style="text-indent:20px;">I would like to make cool web applications, well thought scripts and cool user interfaces.
 				I also continue to learn and practice other useful things around front-end and web development. </p>
 
 			<div id="tabs">
 				<ul>
-					<li><a href="#tabs-1">Nunc tincidunt</a></li>
-					<li><a href="#tabs-2">Proin dolor</a></li>
-					<li><a href="#tabs-3">Aenean lacinia</a></li>
-					<li><a href="#tabs-4">Aenean lacinia</a></li>
+					<li><a href="#tabs-1">Education</a></li>
+					<li><a href="#tabs-2">Work experience</a></li>
+					<li><a href="#tabs-3">Something else</a></li>
+					<li><a href="#tabs-4">And else</a></li>
 				</ul>
 				<div id="tabs-1">
 					<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>

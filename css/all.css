@@ -1,33 +1,30 @@
-
 #wrapper {
 	max-width: 1000px;
 	min-width: 800px;
-	/*height: 1200px;*/
 	border: 1px solid black; /*delete after finish*/
 	margin: 0 auto;
 }
-#header {
+#sidebar {
 	width: 40%;
-	/*height: 100%;*/
 	background-color: #ececec;
 	border-right: 2px solid #333333;
 	float: left;
 	position: relative;
+	color: #58595b;
 }
 #main {
 	width: 60%;
-	/*height: 100%;*/
 	background-color: #ffffff;
 	float: right;
 	position: relative;
+	padding: 45px 53px 0 40px;
 }
 
 .photoWrapper{
 	background-color: white;
 	width: 192px;
 	height: 230px;
-	margin: 100px 0 100px 100px;
-
+	margin: 91px 0 45px 81px;
 	padding: 4px;
 }
 .myPhoto {
@@ -35,11 +32,127 @@
 	overflow: hidden;
 	opacity: 0.8;
 }
+.contacts {
+	font-size: 1em;
+}
 
+.contacts span{
+	display: inline-block;
+	padding: 10px;
+	border-radius: 20px;
+	margin: 0 15px 15px 61px;
+	background-color: #2f386b;
+	color: white;
+	line-height: 17px;
+}
+.contacts a {
+	color: #58595b;
+}
+.contacts a:hover {
+	text-decoration: none;
+}
+.contacts span{
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+.contacts a:hover span {
+	opacity: 0.8;
+
+}
+
+.skills {
+	margin-left: 61px;
+}
+.skills h1 {
+	color: #2f386b;
+	font-size: 23px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.skills h2 {
+	font-size: 17px;
+}
+.skills ul.profSkills, .skills ul.persSkills {
+
+}
+.slider {
+	margin: 12px 1px;
+}
+.borderLine, .borderLine2 {
+	display: inline-block;
+	border-top: 2px solid #2b2e31;
+	width: 73%;
+	height: 10px;
+	opacity: 0.5;
+}
+.borderLine2 {
+	width: 85%;
+}
+.form-group {
+	margin-bottom: 0!important;
+}
+.skillsMarks {
+	float: right;
+	margin-right: 15px;
+}
+.skillsMarks li {
+	float: left;
+	margin-left: 10px;
+}
+.skillsMarks li span {
+	margin-left: 10px;
+}
+
+.slider .ui-slider-range {
+	background: url("../images/sliderBackground.jpg");
+	opacity: 0.8;
+}
+
+.slider-photoshop, .slider-org {
+	margin-bottom: 50px;
+}
+				/*Left-side end*/
+
+				/*Main start*/
+#main h1 {
+	font-size: 53px;
+	font-family: OpenSans;
+	color: #2f386b;
+	margin-bottom: 0;
+}
+#main h2 {
+	margin-top: 0;
+	margin-bottom: 25px;
+	font-size: 23px;
+	font-family: OpenSans-ExtraBold;
+	color: #5d6162;
+}
+
+#main p {
+	font-size: 14px;
+	font-family: OpenSans;
+	color: #58595b;
+}
+/*clear*/
 .group:after {
 	content: ".";
 	display: block;
 	height: 0;
 	clear: both;
 	visibility: hidden;
+}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSans-ExtraBold";
+	src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
 }
