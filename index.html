@@ -14,38 +14,7 @@
 			$("#tabs").tabs();
 		});
 	</script>
-	<script>
-		$(function() {
-			//all sliders
-			$(".slider").slider({
-				value: 27,
-				orientation: "horizontal",
-				range: "min",
-				animate: true
-			});
-			//prof skills sliders
-			$(".slider-html-css").slider("option", "value", 45);
-			$(".slider-dom").slider("option", "value", 50);
-			$(".slider-ajax").slider("option", "value", 20);
-			$(".slider-git-bower-grunt").slider("option", "value", 35);
-			$(".slider-photoshop").slider("option", "value", 60);
-			//pers skills sliders
-			$(".slider-desire").slider("option", "value", 100);
-			$(".slider-resp").slider("option", "value", 90);
-			$(".slider-adapt").slider("option", "value", 80);
-			$(".slider-commun").slider("option", "value", 85);
-			$(".slider-org").slider("option", "value", 70);
-			//unactive on hover
-			$(".slider").hover(
-				function (){
-					$(this).slider("option", "disabled", true);
-				}, function (){
-					$(this).slider("option", "disabled", false);
-				}
-			);
 
-		});
-	</script>
 </head>
 <body>
 	<div id="wrapper" class="group">
@@ -58,38 +27,38 @@
 
 			</div>
 			<div class="contacts">
-				<ul>
-					<li>
-						<a href="#">
+				<ul id="sortable">
+					<li class="ui-state-default">
+						<a href="#" title="Hello there!">
 							<span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>Geolocation
 						</a>
 					</li>
-					<li>
-						<a href="#">
+					<li class="ui-state-default">
+						<a href="#" title="ssdfsdfsdf">
 							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+380993110481
 						</a>
 					</li>
-					<li>
-						<a href="mailto: sanechegg@gmail.com">
+					<li class="ui-state-default">
+						<a href="mailto: sanechegg@gmail.com" title="Oo">
 							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>sanechegg@gmail.com
 						</a>
 					</li>
-					<li>
-						<a href="http://www.world.cc.ua" target="_blank">
+					<li class="ui-state-default">
+						<a href="http://www.world.cc.ua" target="_blank" title="Oo">
 							<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>www.world.cc.ua
 						</a>
 					</li>
-					<li>
-						<a href="http://vk.com/id8731045" target="_blank">
+					<li class="ui-state-default">
+						<a href="http://vk.com/id8731045" target="_blank" title="Oo">
 							<span>vk</span>www.vk.com/id8731045
 						</a>
 					</li>
-					<li>
+					<li class="ui-state-default">
 						<a href="http://github.com/Localstance" target="_blank">
 							<span>git</span>www.github.com/localstance
 						</a>
 					</li>
-					<li>
+					<li class="ui-state-default">
 						<a href="#">
 							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>something else
 						</a>

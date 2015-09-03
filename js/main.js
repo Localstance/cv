@@ -1,0 +1,49 @@
+$(function() {
+
+//model
+    var cssValues = {
+        "border":"none",
+        "background":"none"
+    };
+    var sliderOptions = {
+        value: 0,
+        orientation: "horizontal",
+        range: "min",
+        animate: true
+    };
+
+
+
+//view
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+    $(".ui-state-default").css(cssValues);//disable native css
+
+
+    //all sliders with default options
+    $(".slider").slider(sliderOptions);
+
+    //prof skills sliders
+
+    $(".slider-javascript").slider("option", "value", 27);
+    $(".slider-html-css").slider("option", "value", 45);
+    $(".slider-dom").slider("option", "value", 50);
+    $(".slider-ajax").slider("option", "value", 20);
+    $(".slider-git-bower-grunt").slider("option", "value", 35);
+    $(".slider-photoshop").slider("option", "value", 60);
+
+    //pers skills sliders
+    $(".slider-desire").slider("option", "value", 100);
+    $(".slider-resp").slider("option", "value", 90);
+    $(".slider-adapt").slider("option", "value", 80);
+    $(".slider-commun").slider("option", "value", 85);
+    $(".slider-org").slider("option", "value", 70);
+    //unactive on hover
+    $(".slider").hover(
+        function (){
+            $(this).slider("option", "disabled", true);
+        }, function (){
+            $(this).slider("option", "disabled", false);
+        }
+    );
+});
