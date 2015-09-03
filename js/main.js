@@ -11,8 +11,36 @@ $(function() {
         range: "min",
         animate: true
     };
-
-
+    var showThisRegion = {
+        lat: 50.846391,
+        lng: 33.725940
+    };
+    var myGeolocation = {
+        lat: 49.846391,
+        lng: 36.725940
+    };
+    function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: showThisRegion,
+            scrollwheel: true,
+            zoom: 7
+        });
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+            map: map,
+            position: myGeolocation,
+            title: 'Hello there!'
+        });
+    }
+    //fix problem with shown
+    $(function() {
+        var $modal = $('#myModal'),
+            $map = $('#map');
+        $modal.on('shown.bs.modal', function () {
+            google.maps.event.trigger($map[0], 'resize');
+        });
+    });
 
 //view
     $( "#sortable" ).sortable();
@@ -46,4 +74,6 @@ $(function() {
             $(this).slider("option", "disabled", false);
         }
     );
+    //init google map
+    initMap();
 });
