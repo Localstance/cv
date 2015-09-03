@@ -1,13 +1,13 @@
 #wrapper {
 	max-width: 1000px;
 	min-width: 800px;
-	border: 1px solid black; /*delete after finish*/
+	border: 1px solid #5d6162;
 	margin: 0 auto;
 }
 #sidebar {
 	width: 40%;
 	background-color: #ececec;
-	border-right: 2px solid #333333;
+	border-right: 2px solid #5d6162;
 	float: left;
 	position: relative;
 	color: #58595b;
@@ -34,6 +34,8 @@
 }
 .contacts {
 	font-size: 1em;
+	font-family: OpenSans;
+
 }
 
 .contacts span{
@@ -64,15 +66,18 @@
 
 .skills {
 	margin-left: 61px;
+	font-family: Lato-Bold;
 }
 .skills h1 {
 	color: #2f386b;
 	font-size: 23px;
 	display: inline-block;
 	margin-right: 10px;
+	font-family: Lato-Black;
 }
 .skills h2 {
 	font-size: 17px;
+
 }
 .skills ul.profSkills, .skills ul.persSkills {
 
@@ -106,7 +111,7 @@
 }
 
 .slider .ui-slider-range {
-	background: url("../images/sliderBackground.jpg");
+	background: #4b4997;
 	opacity: 0.8;
 }
 
@@ -128,12 +133,62 @@
 	font-size: 23px;
 	font-family: OpenSans-ExtraBold;
 	color: #5d6162;
+
+}
+#main h3 {
+	font-size: 23px;
+	font-family: Lato-Black;
+	color: #2f386b;
+	display: inline-block;
+	border: 3px solid #2b2e31;
+	width: 70%;
+	text-indent: 36px;
+	border-radius: 10px;
+	padding: 8px;
+	margin-bottom: 20px;
+}
+#main h4 {
+	font-size: 14px;
+	font-family: Lato-Bold;
+	color: #2d3e50;
+	text-indent: 14px;
+}
+.educationList span {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	background-color: #2f386b;
+	border-radius: 35px;
 }
 
+#main img {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: -30px;
+	border-radius: 40px;
+}
 #main p {
 	font-size: 14px;
 	font-family: OpenSans;
 	color: #58595b;
+	text-indent: 20px;
+	text-align: justify;
+}
+
+#main ul {
+	list-style-image: url("../images/disc2.gif");
+	font-size: 14px;
+	font-family: Lato;
+	color: #58595b;
+	margin-left: 14px;
+}
+#main ul li ul{
+	list-style: disc;
+}
+#main ul p {
+	text-indent: 14px;
+	font-size: 14px;
+	font-family: Lato;
 }
 /*clear*/
 .group:after {
@@ -153,6 +208,27 @@
 @font-face {
 	font-family: "OpenSans-ExtraBold";
 	src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Lato-Black";
+	src: url("../fonts/Lato-Black.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Lato-Bold";
+	src: url("../fonts/Lato-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
