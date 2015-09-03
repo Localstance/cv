@@ -63,7 +63,9 @@
 	opacity: 0.8;
 
 }
+.ui-state-default {
 
+}
 .skills {
 	margin-left: 61px;
 	font-family: Lato-Bold;
@@ -84,6 +86,7 @@
 }
 .slider {
 	margin: 12px 1px;
+
 }
 .borderLine, .borderLine2 {
 	display: inline-block;
@@ -113,6 +116,7 @@
 .slider .ui-slider-range {
 	background: #4b4997;
 	opacity: 0.8;
+
 }
 
 .slider-photoshop, .slider-org {
@@ -190,6 +194,11 @@
 	font-size: 14px;
 	font-family: Lato;
 }
+
+		/*Main end*/
+
+
+
 /*clear*/
 .group:after {
 	content: ".";
