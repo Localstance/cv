@@ -42,6 +42,10 @@ $(function() {
         });
     });
 
+    //darggable recreation circles
+    $( ".myHobbies span" ).draggable({ containment: "#containment-wrapper", scroll: false });
+
+
 //view
     $( "#sortable" ).sortable();
     $( "#sortable" ).disableSelection();
@@ -65,7 +69,13 @@ $(function() {
     $(".slider-resp").slider("option", "value", 90);
     $(".slider-adapt").slider("option", "value", 80);
     $(".slider-commun").slider("option", "value", 85);
-    $(".slider-org").slider("option", "value", 70);
+    $(".slider-org").slider("option", "value", 90);
+    //lang skills sliders
+    $(".slider-eng").slider("option", "value", 55);
+    $(".slider-ua").slider("option", "value", 90);
+    $(".slider-rus").slider("option", "value", 100);
+    $(".slider-spain").slider("option", "value", 5);
+
     //unactive on hover
     $(".slider").hover(
         function (){
@@ -76,4 +86,20 @@ $(function() {
     );
     //init google map
     initMap();
+
+    $( "input.showBtn" ).click(function() {
+        $( "div.languageSkills" ).fadeToggle( "slow", function() {
+           //$(this).css("display", "block");
+        });
+        $( "div.recreation" ).fadeToggle( "slow", function() {
+            //
+        });
+        var valueText = $('.showBtn').attr('value');
+        if ( valueText == "Show more" ){
+            $(this).attr("value", "Hide");
+        } else {
+            $(this).attr("value", "Show more");
+        }
+
+    });
 });
