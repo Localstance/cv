@@ -3,6 +3,7 @@
 	min-width: 800px;
 	border: 1px solid #5d6162;
 	margin: 0 auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 #sidebar {
 	width: 40%;
@@ -27,6 +28,8 @@
 	height: 230px;
 	margin: 91px 0 45px 81px;
 	padding: 4px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
 }
 .myPhoto {
 	border: 2px solid #000000;
